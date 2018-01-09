@@ -1,0 +1,47 @@
+= README - SPRING APPS
+
+:githubdir: https://github.com/rafal-perkowski
+:projectdir: /SpringApps
+:blobmasterdir: /blob/master
+:appdir: app
+:adocdir: doc
+:imgdir: img
+
+## Wstęp
+
+Repozytorium zawiera testowe aplikacje implementowane i uruchamiane przy użyciu narzędzia Spring Tool Suite (STS).
+
+## Materiały
+
+* "Spring Framework" - ~200 slajdów z kursu PWN Back-End Developer.
+* https://spring.io/docs/reference[Spring Documentation] - dokumentacja projektowa szkieletu tworzenia aplikacji Spring dla języka Java.
+** https://docs.spring.io/spring-boot/docs/1.5.9.RELEASE/reference/htmlsingle/[Spring Boot] - Spring Boot Reference Guide [1.5.9.RELEASE]
+** https://docs.spring.io/spring-data/jpa/docs/current/reference/html/[Spring Data] - Spring Data JPA Reference Documentation [2.0.2.RELEASE]
+** https://docs.spring.io/spring-security/site/docs/5.0.0.RELEASE/reference/htmlsingle/[Spring Security] - Spring Security Reference [5.0.0.RELEASE]
+* http://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html[Thymeleaf 3.0] - dokumentacja silnika szablonów tworzonych w języku HTML i wypełnianych atrybutami + 
+z modelu w języka Java.
+
+## Narzędzia
+
+* https://spring.io/tools/sts/legacy[Spring Tool Suite 3.9.1] - graficzne narzędzie wspomagające tworzenie aplikacji opartych o szkielet Spring, +
+uruchamiane w środowisku Eclipse IDE [Eclipse Oxygen.1a (4.7.1a)].
+* https://maven.apache.org/docs/3.5.2/release-notes.html[Apache Maven 3.5.2] - narzędzie automatyzujące budowę oprogramowania na platformę Java +
+(realizowane głównie za pomocą wtyczek _ang. plugins_).
+* https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/[Apache Tomcat 8.0.47] - kontener aplikacji webowych umożliwiający uruchamianie aplikacji internetowych +
+w technologiach języka Java.
+* https://dev.mysql.com/downloads/mysql/[MySQL Community Server 5.7.20] - darmowy serwer relacyjnej bazy danych.
+* https://downloads.mysql.com/archives/workbench/[MySQL Workbench 6.3.9] - narzędzie wizualne do tworzenia relacyjnych baz danych z użyciem języka SQL.
+* https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo[Advanced REST client] - narzędzie programistyczne do testowania żądań i odpowiedzi protokołu HTTP + 
+w wersji na przeglądarkę Google Chrome.
+* https://install.advancedrestclient.com/#/install[Advanced REST Client 11.0.31] - wersja desktopowa narzędzia do testowania protokołu HTTP +
+(niestety w tej wersji wymaga poprawienia niektórych podstawowych funkcjonalności np. zakładki nowych żądań + 
+i odpowiedź na autoryzację).
+* https://www.wireshark.org/#download[Wireshark 2.4.3] - darmowy zaawansowany sniffer, czyli oprogramowanie umożliwiające przechwytywanie, + 
+nagrywanie i analizowanie pakietów danych przepływających w sieci).
+* https://nmap.org/npcap/[Npcap 0.97] - biblioteka sniffera pakietów dla systemu Windows rozszerzająca popularną bibliotekę WinPcap +
+o dodatkowe funkcjonalności m.in. możliwość śledzenia pakietów wysyłanych i odbieranych do i z serwera lokalnego (_ang. localhost_).
+
+## Aplikacje testowe
+
+* link:{appdir}/SimpleApp[SimpleApp] - prosta aplikacja przechowująca dane o książkach link:{adocdir}/README-APP-01.adoc[README]
+** Źródło: http://www.baeldung.com/spring-boot-start[Bootstrap a Simple Application using Spring Boot]

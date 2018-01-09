@@ -43,5 +43,5 @@ o dodatkowe funkcjonalności m.in. możliwość śledzenia pakietów wysyłanych
 
 ## Aplikacje testowe
 
-* link:{appdir}/SimpleApp[SimpleApp] - prosta aplikacja przechowująca dane o książkach link:{adocdir}/README-APP-01.adoc[README]
+* link:{appdir}/SimpleApp[SimpleApp] - prosta aplikacja przechowująca dane o książkach link:{adocdir}/README-APP-01.adoc[README-APP-01]
 ** Źródło: http://www.baeldung.com/spring-boot-start[Bootstrap a Simple Application using Spring Boot]

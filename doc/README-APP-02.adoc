@@ -21,34 +21,20 @@ Można ją uruchomić na dwa sposoby:
 * Test: Run As > JUnit Test
 ** _testy integracyjne w oknie STS w zakładce JUnit_
 
-## Zależności
+## Struktura aplikacji
 
-W aplikacji zostały użyte następujące zależności (_ang. dependencies_):
+W aplikacji zostały użyte następujące elementy:
 
-* Web
-* JPA
-* Security
-* Actuator
-* Tomcat
-* H2
-* Testowe: Starter, Security
+* Zależności (_ang. dependencies_):
+** Web, JPA, Security, Actuator, Tomcat, H2, Testowe: Starter, Security
 
-## Pakiety
+* Pakiety (_ang. packages_):
+** app, controller, model, repository, service
 
-Kod źródłowy został zorganizowany w następujących pakietach (_ang. packages_):
+* Encje bazy danych (_ang. database entities_):
+** encja Artist, która zawiera trzy kolumny [id, name, surname]
+** encja Album, która zawiera trzy kolumny [id, artist_id, name]
 
-* app
-* controller
-* model
-* repository
-* service
-
-## Baza danych
-
-Baza składa się z dwóch encji:
-
-. Artist - zawiera trzy kolumny [id, name, surname]
-. Album - zawiera trzy kolumny [id, artist_id, name]
 
 ## Funkcjonalność
 
@@ -73,16 +59,12 @@ można wykonać następujące operacje:
 
 W katalogu [_img_] zostały umieszczone zrzuty ekranu z przebiegu kolejnych testowych wywołań:
 
-* Autentykacja (REST) link:{imgdir}/01-GET-REST.png[[_img_]]
-* Autentykacja (SHARK) link:{imgdir}/02-GET-SHARK.png[[_img_]]
-* Odczyt bazy danych (REST) link:{imgdir}/03-GET-REST.png[[_img_]]
-* Odczyt bazy danych (REST) link:{imgdir}/04-GET-SHARK.png[[_img_]]
-* Dodanie listy albumów pierwszego artysty (REST) link:{imgdir}/05-POST-REST.png[[_img_]]
-* Dodanie listy albumów pierwszego artysty (SHARK) link:{imgdir}/06-POST-SHARK.png[[_img_]]
-* Dodanie listy albumów drugiego artysty (REST) link:{imgdir}/07-POST-REST.png[[_img_]]
-* Dodanie listy albumów drugiego artysty (SHARK) link:{imgdir}/08-POST-SHARK.png[[_img_]]
-* Odczytanie wszystkich danych z bazy (REST) link:{imgdir}/09-GET-REST.png[[_img1_]]link:{imgdir}/11-GET-REST.png[[_img2_]]
-* Odczytanie wszystkich danych z bazy (SHARK) link:{imgdir}/10-GET-SHARK.png[[_img1_]]link:{imgdir}/12-GET-SHARK.png[[_img2_]]
+* Autentykacja link:{imgdir}/01-GET-REST.png[[_REST_]] link:{imgdir}/02-GET-SHARK.png[[_SHARK_]]
+* Odczyt bazy danych link:{imgdir}/03-GET-REST.png[[_REST_]] link:{imgdir}/04-GET-SHARK.png[[_SHARK_]]
+* Dodanie listy albumów pierwszego artysty link:{imgdir}/05-POST-REST.png[[_REST_]] link:{imgdir}/06-POST-SHARK.png[[_SHARK_]]
+* Dodanie listy albumów drugiego artysty link:{imgdir}/07-POST-REST.png[[_REST_]] link:{imgdir}/08-POST-SHARK.png[[_SHARK_]]
+* Odczytanie wszystkich danych z bazy link:{imgdir}/09-GET-REST.png[[_REST1_]] link:{imgdir}/11-GET-REST.png[[_REST1_]] link:{imgdir}/10-GET-SHARK.png[[_SHARK1_]] link:{imgdir}/12-GET-SHARK.png[[_SHARK2_]]
+
 
 W katalogu [_cap_] w pliku [_SampleAppCapture.pcapng_] znajduje się zapis komunikacji protokołu HTTP +
 (uwaga: w pasku komend należy ustawić filtr protokołu na [http]).

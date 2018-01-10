@@ -17,29 +17,18 @@ Można ją uruchomić na dwa sposoby:
 * Test: Run As > JUnit Test
 ** _testy integracyjne w oknie STS w zakładce JUnit_
 
-## Zależności
+## Struktura aplikacji
 
-W aplikacji zostały użyte następujące zależności (_ang. dependencies_):
+W aplikacji zostały użyte następujące elementy:
 
-* Web
-* JPA
-* Security
-* Thymeleaf
-* H2
-* Testowe: Starter, Security, REST
+* Zależności (_ang. dependencies_):
+** Web, JPA, Security, Thymeleaf, H2, Testowe: Starter, Security, REST
 
-## Pakiety
+* Pakiety (_ang. packages_):
+** app, controller, exception, model
 
-Kod źródłowy został zorganizowany w następujących pakietach (_ang. packages_):
-
-* app
-* controller
-* exception
-* model
-
-## Baza danych
-
-Baza składa się z jednej encji Book, która zawiera trzy kolumny [id, title, author].
+* Encje bazy danych (_ang. database entities_):
+** encja Book, która zawiera trzy kolumny [id, title, author].
 
 ## Funkcjonalność
 
@@ -85,26 +74,16 @@ można wykonać następujące operacje:
 
 W katalogu [_img_] zostały umieszczone zrzuty ekranu z przebiegu kolejnych testowych wywołań:
 
-* Autentykacja (REST) link:{imgdir}/01-GET-REST.png[[_img_]]
-* Autentykacja (SHARK) link:{imgdir}/02-GET-SHARK.png[[_img_]]
-* Strona główna (REST) link:{imgdir}/03-GET-REST.png[[_img_]]
-* Strona główna (SHARK) link:{imgdir}/04-GET-SHARK.png[[_img_]]
-* Dodanie danych o książce (REST) link:{imgdir}/05-POST-REST.png[[_img_]]
-* Dodanie danych o książce (SHARK) link:{imgdir}/06-POST-SHARK.png[[_img_]]
-* Odczytanie wszystkich danych z bazy (REST) link:{imgdir}/07-GET-REST.png[[_img_]]
-* Odczytanie wszystkich danych z bazy (SHARK) link:{imgdir}/08-GET-SHARK.png[[_img_]]
-* Odczytanie danych po identyfikatorze (REST) link:{imgdir}/09-GET-REST.png[[_img_]]
-* Odczytanie danych po identyfikatorze (SHARK) link:{imgdir}/10-GET-SHARK.png[[_img_]]
-* Odczytanie danych po tytule (REST) link:{imgdir}/11-GET-REST.png[[_img_]]
-* Odczytanie danych po tytule (SHARK) link:{imgdir}/12-GET-SHARK.png[[_img_]]
-* Skasowanie rekordu o podanym identyfikatorze (REST) link:{imgdir}/13-DELETE-REST.png[[_img_]]
-* Skasowanie rekordu o podanym identyfikatorze (SHARK) link:{imgdir}/14-DELETE-SHARK.png[[_img_]]
-* Ponowne dodanie danych o książce (REST) link:{imgdir}/15-POST-REST.png[[_img_]]
-* Ponowne dodanie danych o książce (SHARK) link:{imgdir}/16-POST-SHARK.png[[_img_]]
-* Modyfikacja dodanego rekordu (REST) link:{imgdir}/17-PUT-REST.png[[_img_]]
-* Modyfikacja dodanego rekordu (SHARK) link:{imgdir}/18-PUT-SHARK.png[[_img_]]
-* Ponowne wyświetlenie danych z bazy (REST) link:{imgdir}/19-GET-REST.png[[_img_]]
-* Ponowne wyświetlenie danych z bazy (SHARK) link:{imgdir}/20-GET-SHARK.png[[_img_]]
+* Autentykacja link:{imgdir}/01-GET-REST.png[[_REST_]] link:{imgdir}/02-GET-SHARK.png[[_SHARK_]]
+* Strona główna link:{imgdir}/03-GET-REST.png[[_REST_]] link:{imgdir}/04-GET-SHARK.png[[_SHARK_]]
+* Dodanie danych o książce link:{imgdir}/05-POST-REST.png[[_REST_]] link:{imgdir}/06-POST-SHARK.png[[_SHARK_]]
+* Odczytanie wszystkich danych z bazy link:{imgdir}/07-GET-REST.png[[_REST_]] link:{imgdir}/08-GET-SHARK.png[[_SHARK_]]
+* Odczytanie danych po identyfikatorze link:{imgdir}/09-GET-REST.png[[_REST_]] link:{imgdir}/10-GET-SHARK.png[[_SHARK_]]
+* Odczytanie danych po tytule link:{imgdir}/11-GET-REST.png[[_REST_]] link:{imgdir}/12-GET-SHARK.png[[_SHARK_]]
+* Skasowanie rekordu o podanym identyfikatorze link:{imgdir}/13-DELETE-REST.png[[_REST_]] link:{imgdir}/14-DELETE-SHARK.png[[_SHARK_]]
+* Ponowne dodanie danych o książce link:{imgdir}/15-POST-REST.png[[_REST_]] link:{imgdir}/16-POST-SHARK.png[[_SHARK_]]
+* Modyfikacja dodanego rekordu link:{imgdir}/17-PUT-REST.png[[_REST_]] link:{imgdir}/18-PUT-SHARK.png[[_SHARK_]]
+* Ponowne wyświetlenie danych z bazy link:{imgdir}/19-GET-REST.png[[_REST_]] link:{imgdir}/20-GET-SHARK.png[[_SHARK_]]
 
 W katalogu [_cap_] w pliku [_SimpleAppCapture.pcapng_] znajduje się zapis komunikacji protokołu HTTP +
 (uwaga: w pasku komend należy ustawić filtr protokołu na [http]).

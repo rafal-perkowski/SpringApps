@@ -46,4 +46,4 @@ o dodatkowe funkcjonalności m.in. możliwość śledzenia pakietów wysyłanych
 ** Źródło: http://www.baeldung.com/spring-boot-start[Bootstrap a Simple Application using Spring Boot]
 
 * link:{appdir}/SampleApp[SampleApp] - przykładowa aplikacja implementująca interfejs webowy i bazę przechowującą dane o artystach i ich albumach link:{adocdir}/README-APP-02.adoc[README-APP-02]
-** Źródło: https://programistamag.pl/programista-10-2017-65/[Tworzenie aplikacji ze Spring Boot] (_magazyn: Programista 10/2017 (65) - strony 24-27_)
+** Źródło: http://programistamag.pl/programista-10-2017-65/[Tworzenie aplikacji ze Spring Boot] (_magazyn: Programista 10/2017 (65) - strony 24-27_)

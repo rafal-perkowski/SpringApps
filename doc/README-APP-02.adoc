@@ -4,7 +4,7 @@
 
 ## Wstęp
 
-Aplikacja SampleApp powstała na bazie materiałów zamieszczonuch na stronie http://www.baeldung.com/spring-boot-start[Bootstrap a Simple Application using Spring Boot]
+Aplikacja SampleApp powstała na bazie artykułu o którym informacja znajduje się na stronie http://programistamag.pl/programista-10-2017-65/[Tworzenie aplikacji ze Spring Boot]
 
 ## Uruchomienie
 

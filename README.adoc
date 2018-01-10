@@ -42,8 +42,8 @@ o dodatkowe funkcjonalności m.in. możliwość śledzenia pakietów wysyłanych
 
 ## Aplikacje testowe
 
-* link:{appdir}/SimpleApp[SimpleApp] - prosta aplikacja przechowująca dane o książkach link:{adocdir}/README-APP-01.adoc[README-APP-01]
+* link:{appdir}/SimpleApp[SimpleApp] - prosta aplikacja implementująca interfejs webowy i bazę przechowującą dane o książkach link:{adocdir}/README-APP-01.adoc[README-APP-01]
 ** Źródło: http://www.baeldung.com/spring-boot-start[Bootstrap a Simple Application using Spring Boot]
 
-* link:{appdir}/SampleApp[SampleApp] - przykładowa aplikacja przechowująca dane o artystach i ich albumach link:{adocdir}/README-APP-02.adoc[README-APP-02]
+* link:{appdir}/SampleApp[SampleApp] - przykładowa aplikacja implementująca interfejs webowy i bazę przechowującą dane o artystach i ich albumach link:{adocdir}/README-APP-02.adoc[README-APP-02]
 ** Źródło: https://programistamag.pl/programista-10-2017-65/[Tworzenie aplikacji ze Spring Boot] (_magazyn: Programista 10/2017 (65) - strony 24-27_)

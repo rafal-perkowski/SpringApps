@@ -45,8 +45,8 @@ można wykonać następujące operacje:
 
 * Odczytanie zawartości bazy danych
 ** GET: localhost:8081/artists
-** Authorization: Basic YWRtaW46bmltZGE=
-*** _Uwaga: za pierwszym razem pojawi się dodatkowo okno autentykacji [Username: admin] [Password: nimda]_
+*** Authorization: Basic YWRtaW46bmltZGE=
+**** _Uwaga: za pierwszym razem pojawi się dodatkowo okno autentykacji [Username: admin] [Password: nimda]_
 
 * Dodanie artysty z listą albumów
 ** POST: localhost:8081/artists

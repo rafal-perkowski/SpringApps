@@ -60,12 +60,12 @@ public class BookController {
  
     @PutMapping("/{id}")
     public Book updateBook(@RequestBody Book book, @PathVariable long id) {
-    	TestController.traceCounter(1, "SimpleController updateBook(" + book + ", " + id + ")");
+    	TestController.traceCounter(1, "BookController updateBook(" + book + ", " + id + ")");
         if (book.getId() != id) {
           throw new BookIdMismatchException();
         }
         bookRepository.findOne(id).orElseThrow(BookNotFoundException::new);
-        TestController.traceCounter(2, "SimpleController updateBook(" + book + ", " + id + ")");
+        TestController.traceCounter(2, "BookController updateBook(" + book + ", " + id + ")");
         return bookRepository.save(book);
     }
 }

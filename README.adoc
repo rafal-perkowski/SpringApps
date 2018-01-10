@@ -13,7 +13,6 @@ Repozytorium zawiera testowe aplikacje implementowane i uruchamiane przy użyciu
 
 ## Materiały
 
-* "Spring Framework" - ~200 slajdów z kursu PWN Back-End Developer.
 * https://spring.io/docs/reference[Spring Documentation] - dokumentacja projektowa szkieletu tworzenia aplikacji Spring dla języka Java.
 ** https://docs.spring.io/spring-boot/docs/1.5.9.RELEASE/reference/htmlsingle/[Spring Boot] - Spring Boot Reference Guide [1.5.9.RELEASE]
 ** https://docs.spring.io/spring-data/jpa/docs/current/reference/html/[Spring Data] - Spring Data JPA Reference Documentation [2.0.2.RELEASE]
@@ -45,3 +44,6 @@ o dodatkowe funkcjonalności m.in. możliwość śledzenia pakietów wysyłanych
 
 * link:{appdir}/SimpleApp[SimpleApp] - prosta aplikacja przechowująca dane o książkach link:{adocdir}/README-APP-01.adoc[README-APP-01]
 ** Źródło: http://www.baeldung.com/spring-boot-start[Bootstrap a Simple Application using Spring Boot]
+
+* link:{appdir}/SampleApp[SampleApp] - przykładowa aplikacja przechowująca dane o artystach i ich albumach link:{adocdir}/README-APP-02.adoc[README-APP-02]
+** Źródło: https://programistamag.pl/programista-10-2017-65/[Tworzenie aplikacji ze Spring Boot] (_magazyn: Programista 10/2017 (65) - strony 24-27_)

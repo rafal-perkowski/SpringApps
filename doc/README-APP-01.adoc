@@ -37,6 +37,10 @@ Kod źródłowy został zorganizowany w następujących pakietach (_ang. package
 * exception
 * model
 
+## Baza danych
+
+Baza składa się z jednej encji Book, która zawiera trzy kolumny [id, title, author].
+
 ## Funkcjonalność
 
 Funkcjonalność aplikacji można przetestować używając przeglądarki i rozszerzenia [_Advanced REST client_]. +
@@ -46,6 +50,7 @@ można wykonać następujące operacje:
 
 * Pobranie strony powitalnej
 ** GET: localhost:8081
+** Authorization: Basic am9objoxMjM=
 *** _Uwaga: za pierwszym razem pojawi się dodatkowo okno autentykacji [Username: john] [Password: 123]_
 
 * Dodanie książki do bazy danych w formacie JSON
@@ -101,10 +106,12 @@ W katalogu [_img_] zostały umieszczone zrzuty ekranu z przebiegu kolejnych test
 * Ponowne wyświetlenie danych z bazy (REST) link:{imgdir}/19-GET-REST.png[[_img_]]
 * Ponowne wyświetlenie danych z bazy (SHARK) link:{imgdir}/20-GET-SHARK.png[[_img_]]
 
+W katalogu [_cap_] w pliku [_SimpleAppCapture.pcapng_] znajduje się zapis komunikacji protokołu HTTP +
+(uwaga: w pasku komend należy ustawić filtr protokołu na [http]).
+
 ### Uwagi:
 
 . REST = Advanced REST client
 . SHARK = Wireshark
 . Numer localhosta w formacie ::1 (IPv6)
 . Przy ponownym dodaniu rekordu do bazy uzyskuje on numer 2 z powodu autoinkrementacji
-

@@ -8,7 +8,7 @@ Aplikacja SampleApp powstała na bazie artykułu o którym informacja znajduje s
 
 ## Uruchomienie
 
-Można ją uruchomić na dwa sposoby:
+Można ją uruchomić na trzy sposoby:
 
 * War: Run As > Spring Boot App / Java Application
 ** URL: localhost:8081

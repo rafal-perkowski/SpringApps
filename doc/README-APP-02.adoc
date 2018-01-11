@@ -63,7 +63,7 @@ W katalogu [_img_] zostały umieszczone zrzuty ekranu z przebiegu kolejnych test
 * Odczyt bazy danych link:{imgdir}/03-GET-REST.png[[_REST_]] link:{imgdir}/04-GET-SHARK.png[[_SHARK_]]
 * Dodanie listy albumów pierwszego artysty link:{imgdir}/05-POST-REST.png[[_REST_]] link:{imgdir}/06-POST-SHARK.png[[_SHARK_]]
 * Dodanie listy albumów drugiego artysty link:{imgdir}/07-POST-REST.png[[_REST_]] link:{imgdir}/08-POST-SHARK.png[[_SHARK_]]
-* Odczytanie wszystkich danych z bazy link:{imgdir}/09-GET-REST.png[[_REST1_]] link:{imgdir}/11-GET-REST.png[[_REST1_]] link:{imgdir}/10-GET-SHARK.png[[_SHARK1_]] link:{imgdir}/12-GET-SHARK.png[[_SHARK2_]]
+* Odczytanie wszystkich danych z bazy link:{imgdir}/09-GET-REST.png[[_REST1_]] link:{imgdir}/11-GET-REST.png[[_REST2_]] link:{imgdir}/10-GET-SHARK.png[[_SHARK1_]] link:{imgdir}/12-GET-SHARK.png[[_SHARK2_]]
 
 
 W katalogu [_cap_] w pliku [_SampleAppCapture.pcapng_] znajduje się zapis komunikacji protokołu HTTP +

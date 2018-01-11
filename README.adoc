@@ -19,8 +19,8 @@ Repozytorium zawiera testowe aplikacje implementowane i uruchamiane przy użyciu
 ** https://docs.spring.io/spring-security/site/docs/5.0.0.RELEASE/reference/htmlsingle/[Spring Security] - Spring Security Reference [5.0.0.RELEASE]
 * http://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html[Thymeleaf 3.0] - dokumentacja silnika szablonów tworzonych w języku HTML i wypełnianych atrybutami + 
 z modelu w języka Java.
-* Adnotacje występujące w szkielecie Spring link:{adocdir}/README-SPRING-ANNOTATIONS.adoc[README]
-* Adnotacje mapowania obiektowo-relacyjnego Hibernate link:{adocdir}/README-HIBERNATE-ANNOTATIONS.adoc[README]
+* Adnotacje występujące w szkielecie Spring link:{adocdir}/README-SPRING-ANNOTATIONS.adoc[README] na podstawie http://dzone.com/articles/a-guide-to-spring-framework-annotations[A Guide to Spring Framework Annotations]
+* Adnotacje mapowania obiektowo-relacyjnego Hibernate link:{adocdir}/README-HIBERNATE-ANNOTATIONS.adoc[README] na podstawie http://docs.jboss.org/hibernate/stable/annotations/reference/en/html_single/[Hibernate Annotations Reference Guide]
 
 ## Narzędzia
 

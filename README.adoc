@@ -34,7 +34,7 @@ w technologiach języka Java.
 w wersji na przeglądarkę Google Chrome.
 * https://install.advancedrestclient.com/#/install[Advanced REST Client 11.0.31] - wersja desktopowa narzędzia do testowania protokołu HTTP +
 (niestety w tej wersji wymaga poprawienia niektórych podstawowych funkcjonalności np. zakładki nowych żądań + 
-i odpowiedź na autentykację).
+i odpowiedzi na autentykację).
 * https://www.wireshark.org/#download[Wireshark 2.4.3] - darmowy zaawansowany sniffer, czyli oprogramowanie umożliwiające przechwytywanie, + 
 nagrywanie i analizowanie pakietów danych przepływających w sieci.
 * https://nmap.org/npcap/[Npcap 0.97] - biblioteka sniffera pakietów dla systemu Windows rozszerzająca popularną bibliotekę WinPcap +

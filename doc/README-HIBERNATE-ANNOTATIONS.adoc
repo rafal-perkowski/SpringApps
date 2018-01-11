@@ -1,0 +1,977 @@
+= README - Hibernate Annotations
+
+:githubdir: https://github.com/rafal-perkowski
+
+## Adnotacje mapowania obiektowo-relacyjnego Hibernate
+
+### Zastosowanie:
+
+* [A] = Autoconfiguration
+* [CL] = Class
+* [I] = Interface
+* [F] = Field
+* [C] = Constructor
+* [CP] = Constructor Parameter
+* [M] = Method
+* [MP] = Method Parameter
+
+[%header,cols="6,4,1,1,1,1,1,1,1,1"]
+|===
+^|GROUP
+^|ANNOTATION
+^|[A]
+^|[CL]
+^|[I]
+^|[F]
+^|[C]
+^|[CP]
+^|[M]
+^|[MP]
+
+|Hibernate Annotations
+|@Access
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Any
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@AnyMetaDef
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@AssociationOverride
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@AttributeOverride
+^|
+^|+
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@AttributeOverrides
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Basic
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@BatchSize
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Cache
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Cacheable
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Cascade
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@CollectionId
+^|
+^|
+^|
+^|+
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@CollectionTable
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Column
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@ColumnResult
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Columns
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@DiscriminatorColumn
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@DiscriminatorFormula
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@DiscriminatorValue
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@ElementCollection
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Embeddable
+^|
+^|+
+^|
+^|+
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Embedded
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@EmbeddedId
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Entity
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@EntityResult
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Enumerated
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@FetchProfile
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@FieldResult
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Filter
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@FilterDef
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@FilterJoinTable
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Filters
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@ForeignKey
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Formula
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Generated
+^|
+^|
+^|
+^|+
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@GeneratedValue
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@GenericGenerator
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Id
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@IdClass
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Index
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Inheritance
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@JoinColumn
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@JoinColumns
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@JoinTable
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Loader
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Lob
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@ManyToAny
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@ManyToMany
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@ManyToOne
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@MapKey
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@MapKeyColumn
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@MappedSuperclass
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@MapsId
+^|
+^|
+^|
+^|+
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@MetaValue
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@NamedNativeQuery
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@NamedQuery
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@NaturalId
+^|
+^|
+^|
+^|+
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@NotFound
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@OnDelete
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@OneToMany
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@OneToOne
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@OrderBy
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@OrderColumn
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@ParamDef
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Parameter
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Parent
+^|
+^|
+^|
+^|+
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Persister
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@PrimaryKeyJoinColumn
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@SecondaryTable
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@SecondaryTables
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Sort
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@SQLDelete
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@SQLDeleteAll
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@SQLInsert
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@SqlResultSetMapping
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@SQLUpdate
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Table
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@TableGenerator
+^|
+^|
+^|
+^|+
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@TableGenerator
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Hibernate Annotations
+|@Target
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Temporal
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Transient
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Tuplizer
+^|
+^|
+^|+
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Type
+^|
+^|
+^|
+^|+
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Version
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Hibernate Annotations
+|@Where
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|===

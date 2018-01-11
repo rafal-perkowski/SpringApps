@@ -1,0 +1,834 @@
+= README - Spring Framework Annotations
+
+:githubdir: https://github.com/rafal-perkowski
+
+## Adnotacje występujące w szkielecie Spring
+
+### Zastosowanie:
+
+* [A] = Autoconfiguration
+* [CL] = Class
+* [I] = Interface
+* [F] = Field
+* [C] = Constructor
+* [CP] = Constructor Parameter
+* [M] = Method
+* [MP] = Method Parameter
+
+[%header,cols="12,4,1,1,1,1,1,1,1,1"]
+|===
+^|GROUP
+^|ANNOTATION
+^|[A]
+^|[CL]
+^|[I]
+^|[F]
+^|[C]
+^|[CP]
+^|[M]
+^|[MP]
+
+|Core Spring Framework Annotations
+|@Required
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Core Spring Framework Annotations
+|@Autowired
+^|
+^|
+^|
+^|+
+^|+
+^|
+^|+
+^|
+
+|Core Spring Framework Annotations
+|@Qualifier
+^|
+^|
+^|
+^|
+^|+
+^|
+^|+
+^|
+
+|Core Spring Framework Annotations
+|@Configuration
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Core Spring Framework Annotations
+|@ComponentScan
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Core Spring Framework Annotations
+|@Bean
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Core Spring Framework Annotations
+|@Lazy
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Core Spring Framework Annotations
+|@Value
+^|
+^|
+^|
+^|+
+^|
+^|+
+^|
+^|+
+
+|Spring Framework Stereotype Annotations
+|@Component
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Stereotype Annotations
+|@Controller
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Stereotype Annotations
+|@Service
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Stereotype Annotations
+|@Repository
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Boot Annotations
+|@EnableAutoConfiguration
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Boot Annotations
+|@SpringBootApplication
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring MVC and REST Annotations
+|@Controller
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring MVC and REST Annotations
+|@RequestMapping
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring MVC and REST Annotations
+|@CookieValue
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+
+|Spring MVC and REST Annotations
+|@CrossOrigin
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Composed @RequestMapping Variants
+|@GetMapping
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Composed @RequestMapping Variants
+|@PostMapping
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Composed @RequestMapping Variants
+|@PutMapping
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Composed @RequestMapping Variants
+|@PatchMapping
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Composed @RequestMapping Variants
+|@DeleteMapping
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Composed @RequestMapping Variants
+|@ExceptionHandler
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Composed @RequestMapping Variants
+|@InitBinder
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Composed @RequestMapping Variants
+|@Mappings and @Mapping
+^|
+^|
+^|
+^|+
+^|
+^|
+^|
+^|
+
+|Composed @RequestMapping Variants
+|@MatrixVariable
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+
+|Composed @RequestMapping Variants
+|@PathVariable
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+
+|Composed @RequestMapping Variants
+|@RequestAttribute
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+
+|Composed @RequestMapping Variants
+|@RequestBody
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+
+|Composed @RequestMapping Variants
+|@RequestHeader
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+
+|Composed @RequestMapping Variants
+|@RequestParam
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+
+|Composed @RequestMapping Variants
+|@RequestPart
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+
+|Composed @RequestMapping Variants
+|@ResponseBody
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Composed @RequestMapping Variants
+|@ResponseStatus
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Composed @RequestMapping Variants
+|@ControllerAdvice
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Composed @RequestMapping Variants
+|@RestController
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Composed @RequestMapping Variants
+|@RestControllerAdvice
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Composed @RequestMapping Variants
+|@SessionAttribute
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+
+|Composed @RequestMapping Variants
+|@SessionAttributes
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Cloud Annotations
+|@EnableConfigServer
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Cloud Annotations
+|@EnableEurekaServer
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Cloud Annotations
+|@EnableDiscoveryClient
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Cloud Annotations
+|@EnableCircuitBreaker
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Cloud Annotations
+|@HystrixCommand
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring Framework DataAccess Annotations
+|@Transactional
+^|
+^|+
+^|+
+^|
+^|
+^|
+^|+
+^|
+
+|Cache-Based Annotations
+|@Cacheable
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Cache-Based Annotations
+|@CachePut
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Cache-Based Annotations
+|@CacheEvict
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Cache-Based Annotations
+|@CacheConfig
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Task Execution and Scheduling Annotations
+|@Scheduled
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Task Execution and Scheduling Annotations
+|@Async
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring Framework Testing Annotations
+|@BootstrapWith
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Testing Annotations
+|@ContextConfiguration
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Testing Annotations
+|@WebAppConfiguration
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Testing Annotations
+|@Timed
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring Framework Testing Annotations
+|@Repeat
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring Framework Testing Annotations
+|@Commit
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring Framework Testing Annotations
+|@RollBack
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring Framework Testing Annotations
+|@DirtiesContext
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring Framework Testing Annotations
+|@BeforeTransaction
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring Framework Testing Annotations
+|@AfterTransaction
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring Framework Testing Annotations
+|@Sql
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring Framework Testing Annotations
+|@SqlConfig
+^|
+^|+
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring Framework Testing Annotations
+|@SqlGroup
+^|
+^|
+^|
+^|
+^|
+^|
+^|+
+^|
+
+|Spring Framework Testing Annotations
+|@SpringBootTest
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Testing Annotations
+|@DataJpaTest
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Testing Annotations
+|@DataMongoTest
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Testing Annotations
+|@WebMVCTest
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Testing Annotations
+|@AutoConfigureMockMVC
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Testing Annotations
+|@MockBean
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Testing Annotations
+|@JsonTest
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+^|
+
+|Spring Framework Testing Annotations
+|@TestPropertySource
+^|
+^|+
+^|
+^|
+^|
+^|
+^|
+^|
+
+|===

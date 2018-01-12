@@ -26,6 +26,8 @@ z modelu w języka Java.
 
 * https://spring.io/tools/sts/legacy[Spring Tool Suite 3.9.1] - graficzne narzędzie wspomagające tworzenie aplikacji opartych o szkielet Spring, +
 uruchamiane w środowisku Eclipse IDE [Eclipse Oxygen.1a (4.7.1a)].
+* http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html?printOnly=1[Java SE Development Kit 8u144] - Java Platform, Standard Edition Development Kit - platforma Javy wraz + 
+z narzędziami programistycznymi.
 * https://maven.apache.org/docs/3.5.2/release-notes.html[Apache Maven 3.5.2] - narzędzie automatyzujące budowę oprogramowania na platformę Java +
 (realizowane głównie za pomocą wtyczek _ang. plugins_).
 * https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.47/[Apache Tomcat 8.0.47] - kontener aplikacji webowych umożliwiający uruchamianie aplikacji internetowych +

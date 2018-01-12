@@ -1,4 +1,4 @@
-= README - SimpleApp (APP02)
+= README - SampleApp (APP02)
 
 :imgdir: ../img/img-02
 

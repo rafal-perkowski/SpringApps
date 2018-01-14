@@ -72,7 +72,7 @@ można wykonać następujące operacje:
 
 ## Zrzuty ekranu
 
-W katalogu [_img_] zostały umieszczone zrzuty ekranu z przebiegu kolejnych testowych wywołań:
+W katalogu link:{imgdir}[[_img_]] zostały umieszczone zrzuty ekranu z przebiegu kolejnych testowych wywołań:
 
 * Autentykacja link:{imgdir}/01-GET-REST.png[[_REST_]] link:{imgdir}/02-GET-SHARK.png[[_SHARK_]]
 * Strona główna link:{imgdir}/03-GET-REST.png[[_REST_]] link:{imgdir}/04-GET-SHARK.png[[_SHARK_]]

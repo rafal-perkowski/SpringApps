@@ -51,3 +51,6 @@ o dodatkowe funkcjonalności m.in. możliwość śledzenia pakietów wysyłanych
 
 * link:{appdir}/SampleApp[SampleApp] - przykładowa aplikacja implementująca interfejs webowy i bazę przechowującą dane o artystach i ich albumach link:{adocdir}/README-APP-02.adoc[README-APP-02]
 ** Źródło: http://programistamag.pl/programista-10-2017-65/[Tworzenie aplikacji ze Spring Boot] (_magazyn: Programista 10/2017 (65) - strony 24-27_)
+
+* link:{appdir}/SpringMVC[SpringMVC] - przykładowa aplikacja implementująca interfejs webowy sklepu internetowego link:{adocdir}/README-APP-03.adoc[README-APP-03]
+** Źródło: https://helion.pl/ksiazki/spring-mvc-przewodnik-dla-poczatkujacych-amuthan-g,sprimv.htm#format/d[Spring MVC. Przewodnik dla początkujących] - książka opisuje zastosowanie szkieletu Spring MVC (_ang. Model-View-Controller_) w aplikacjach internetowych

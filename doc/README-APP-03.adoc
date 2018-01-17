@@ -2,6 +2,7 @@
 
 :appdir: ../app/SpringMVC
 :imgdir: ../img/img-03
+:capdir: ../cap
 
 ## Wstęp
 
@@ -17,6 +18,11 @@ Aplikacja SpringMVC (w przerobionej wersji) implementowana (w etapach) na podsta
 Szkielety aplikacji powstają przy użyciu kreatora Spring Starter Project narzędzia Spring Tool Suite.
 
 * link:{appdir}/spring-mvc-01[spring-mvc-01] - wyświetlenie strony startowej
-** _URL: localhost:8080/spring-mvc-01_
+** _URL: localhost:8080/spring-mvc-01/_
 ** wykorzystanie szablonów Thymeleaf w miejsce serwletów JSP
 
+* link:{appdir}/spring-mvc-02[spring-mvc-02] - wyświetlenie strony startowej i listy produktów link:{imgdir}/spring-mvc-02.png[[zrzut ekranu]] link:{capdir}[[zapis komunikacji]] 
+** _URL: localhost:8080/spring-mvc-02/_
+** _URL: localhost:8080/spring-mvc-02/products_
+** wykorzystanie szablonów Thymeleaf w miejsce serwletów JSP
+** zamiana bazy HQSL na bazę H2

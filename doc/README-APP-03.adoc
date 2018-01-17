@@ -11,7 +11,7 @@ Aplikacja SpringMVC (w przerobionej wersji) implementowana (w etapach) na podsta
 ## Uruchomienie
 
 * War: Run As > Run on Server
-** URL: localhost:8080/nazwa-wersji-aplikacji
+** URL: localhost:8080/nazwa-wersji-aplikacji/
 
 ## Etapy
 
@@ -21,7 +21,7 @@ Szkielety aplikacji powstają przy użyciu kreatora Spring Starter Project narz�
 ** _URL: localhost:8080/spring-mvc-01/_
 ** wykorzystanie szablonów Thymeleaf w miejsce serwletów JSP
 
-* link:{appdir}/spring-mvc-02[spring-mvc-02] - wyświetlenie strony startowej i listy produktów link:{imgdir}/spring-mvc-02.png[[zrzut ekranu]] link:{capdir}[[zapis komunikacji]] 
+* link:{appdir}/spring-mvc-02[spring-mvc-02] - wyświetlenie strony startowej i listy produktów link:{imgdir}/spring-mvc-02.png[[ekran sniffera]] link:{capdir}[[zapis komunikacji]] 
 ** _URL: localhost:8080/spring-mvc-02/_
 ** _URL: localhost:8080/spring-mvc-02/products_
 ** wykorzystanie szablonów Thymeleaf w miejsce serwletów JSP

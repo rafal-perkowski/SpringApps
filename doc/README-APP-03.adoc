@@ -13,25 +13,29 @@ Aplikacja SpringMVC (w przerobionej wersji) implementowana (w etapach) na podsta
 * War: Run As > Run on Server
 ** URL: localhost:8080/nazwa-wersji-aplikacji/
 
+## Modyfikacje
+
+W stosunku do oryginału zastosowano następujące zmiany:
+
+* Szkielety aplikacji powstają przy użyciu kreatora Spring Starter Project.
+* Parametry konfiguracyjne aplikacji zostały przeniesione (tam gdzie jest to możliwe) do pliku _application.properties_.
+* Wykorzystano szablony Thymeleaf w miejsce serwletów JSP.
+* Baza HQSL została zamieniona na bazę H2.
+
 ## Etapy
 
-Szkielety aplikacji powstają przy użyciu kreatora Spring Starter Project narzędzia Spring Tool Suite.
+Poniżej znajdują się przyrostowe wersje aplikacji wraz z testowymi wywołaniami dodawanych funkcjonalności.
 
 * link:{appdir}/spring-mvc-01[spring-mvc-01] - wyświetlenie strony startowej
-** _URL: localhost:8080/spring-mvc-01/_
-** wykorzystanie szablonów Thymeleaf w miejsce serwletów JSP
+** _URL: http://localhost:8080/spring-mvc-01/_
 
 * link:{appdir}/spring-mvc-02[spring-mvc-02] - wyświetlenie strony startowej i listy produktów link:{imgdir}/spring-mvc-02.png[[ekran sniffera]] link:{capdir}[[zapis komunikacji]] 
-** _URL: localhost:8080/spring-mvc-02/_
-** _URL: localhost:8080/spring-mvc-02/products_
-** wykorzystanie szablonów Thymeleaf w miejsce serwletów JSP
-** zamiana bazy HQSL na bazę H2
+** _URL: http://localhost:8080/spring-mvc-02/_
+** _URL: http://localhost:8080/spring-mvc-02/products_
 
 * link:{appdir}/spring-mvc-03[spring-mvc-03] - wyświetlenie strony startowej i listy produktów, wywołania parametryczne link:{imgdir}/spring-mvc-03.png[[ekran sniffera]] link:{capdir}[[zapis komunikacji]] 
-** _URL: localhost:8080/spring-mvc-03/_
-** _URL: localhost:8080/spring-mvc-03/products_
-** _URL: localhost:8080/spring-mvc-03/market/products/Laptop_
-** _URL: localhost:8080/spring-mvc-03/market/product?id=P1234_
-** _URL: localhost:8080/spring-mvc-03/market/products/filter/params;brands=Google,Dell;categories=Tablet,Laptop_
-** wykorzystanie szablonów Thymeleaf w miejsce serwletów JSP
-** zamiana bazy HQSL na bazę H2
+** _URL: http://localhost:8080/spring-mvc-03/_
+** _URL: http://localhost:8080/spring-mvc-03/products_
+** _URL: http://:8080/spring-mvc-03/market/products/Laptop_
+** _URL: http://localhost:8080/spring-mvc-03/market/product?id=P1234_
+** _URL: http://localhost:8080/spring-mvc-03/market/products/filter/params;brands=Google,Dell;categories=Tablet,Laptop_

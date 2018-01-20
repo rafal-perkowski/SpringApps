@@ -27,7 +27,7 @@ Szkielety aplikacji powstają przy użyciu kreatora Spring Starter Project narz�
 ** wykorzystanie szablonów Thymeleaf w miejsce serwletów JSP
 ** zamiana bazy HQSL na bazę H2
 
-* link:{appdir}/spring-mvc-03[spring-mvc-03] - wyświetlenie strony startowej, listy produktów link:{imgdir}/spring-mvc-03.png[[ekran sniffera]] link:{capdir}[[zapis komunikacji]] 
+* link:{appdir}/spring-mvc-03[spring-mvc-03] - wyświetlenie strony startowej i listy produktów, wywołania parametryczne link:{imgdir}/spring-mvc-03.png[[ekran sniffera]] link:{capdir}[[zapis komunikacji]] 
 ** _URL: localhost:8080/spring-mvc-03/_
 ** _URL: localhost:8080/spring-mvc-03/products_
 ** _URL: localhost:8080/spring-mvc-03/market/products/Laptop_

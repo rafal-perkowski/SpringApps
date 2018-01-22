@@ -45,3 +45,6 @@ Poniżej znajdują się przyrostowe wersje aplikacji wraz z testowymi wywołania
 * link:{appdir}/spring-mvc-04[spring-mvc-04] link:{imgdir}/spring-mvc-04.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]] 
 ** dodanie nowego produktu
 *** _http://localhost:8080/spring-mvc-04/market/products/add_
+
+### Uwaga
+Uruchomienie kodów źródłowych w środowisku STS (Spring Tools Suite) pozwala na bezpośrednie wykorzystanie linków testowych (tj. dla _localhost_).

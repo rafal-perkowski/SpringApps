@@ -9,9 +9,8 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		
 		TestController.traceCounter(TestController.InsertType.INOUT, "ServletInitializer configure()");
-		
+		setRegisterErrorPageFilter(false);
 		return application.sources(SpringMvc02Application.class);
 	}
 

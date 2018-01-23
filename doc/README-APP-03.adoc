@@ -27,34 +27,24 @@ W stosunku do oryginału zastosowano następujące zmiany:
 Poniżej znajdują się przyrostowe wersje aplikacji wraz z testowymi wywołaniami dodawanych funkcjonalności.
 
 * link:{appdir}/spring-mvc-01[spring-mvc-01] link:{imgdir}/spring-mvc-01.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]]
-** wyświetlenie strony startowej
-*** _http://localhost:8080/spring-mvc-01/_
+** wyświetlenie strony startowej http://localhost:8080/spring-mvc-01/[[_localhost/spring-mvc-01_]]
 
 * link:{appdir}/spring-mvc-02[spring-mvc-02] link:{imgdir}/spring-mvc-02.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]]
-** wyświetlenie strony startowej
-*** _http://localhost:8080/spring-mvc-02/_
-** wyświetlenie listy produktów
-*** _http://localhost:8080/spring-mvc-02/products_
+** wyświetlenie strony startowej http://localhost:8080/spring-mvc-02/[[_localhost/spring-mvc-02_]]
+** wyświetlenie listy produktów http://localhost:8080/spring-mvc-02/products[[_localhost/spring-mvc-02/products_]]
 
-* link:{appdir}/spring-mvc-03[spring-mvc-03] link:{imgdir}/spring-mvc-03.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]] 
-** wyświetlenie strony startowej
-*** _http://localhost:8080/spring-mvc-03/_
-** wyświetlenie listy produktów
-*** _http://localhost:8080/spring-mvc-03/products_
-** wyświetlenie produktu z wybranej kategorii
-*** _http://localhost:8080/spring-mvc-03/market/products/Laptop_
-** wyświetlenie produktu o podanym identyfikatorze
-*** _http://localhost:8080/spring-mvc-03/market/product?id=P1234_
+* link:{appdir}/spring-mvc-03[spring-mvc-03] link:{imgdir}/spring-mvc-03.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]]
+** wyświetlenie strony startowej http://localhost:8080/spring-mvc-03/[[_localhost/spring-mvc-03_]]
+** wyświetlenie listy produktów http://localhost:8080/spring-mvc-03/products[[_localhost/spring-mvc-03/market/products_]]
+** wyświetlenie produktu z wybranej kategorii http://localhost:8080/spring-mvc-03/market/products/Laptop[[_localhost/spring-mvc-03/market/products/{category}_]]
+** wyświetlenie produktu o podanym identyfikatorze http://localhost:8080/spring-mvc-03/market/product?id=P1234[[_localhost/spring-mvc-03/market/product{id}_]]
 ** wyświetlenie produktów przy użyciu parametrów macierzowych
-*** _http://localhost:8080/spring-mvc-03/market/products/filter/params;brands=Google,Dell;categories=Tablet,Laptop_
+http://localhost:8080/spring-mvc-03/market/products/filter/params;brands=Google,Dell;categories=Tablet,Laptop[[_localhost/spring-mvc-03/market/products/filter/params_]]
 
 * link:{appdir}/spring-mvc-04[spring-mvc-04] link:{imgdir}/spring-mvc-04.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]] 
-** wyświetlenie strony startowej
-*** _http://localhost:8080/spring-mvc-04/_
-** wyświetlenie listy produktów
-*** _http://localhost:8080/spring-mvc-04/products_
-** dodanie nowego produktu
-*** _http://localhost:8080/spring-mvc-04/market/products/add_
+** wyświetlenie strony startowej http://localhost:8080/spring-mvc-04/[[_localhost/spring-mvc-04_]]
+** wyświetlenie listy produktów http://localhost:8080/spring-mvc-04/market/products[[_localhost/spring-mvc-04/market/products_]]
+** dodanie nowego produktu http://localhost:8080/spring-mvc-04/market/products/add[[_localhost/spring-mvc-04/market/products/add_]]
 
 ### Uwaga
 Uruchomienie kodów źródłowych w środowisku STS (Spring Tools Suite) pozwala na bezpośrednie wykorzystanie linków testowych (tj. dla _localhost_).

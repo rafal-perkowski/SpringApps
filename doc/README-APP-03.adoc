@@ -31,10 +31,16 @@ Poniżej znajdują się przyrostowe wersje aplikacji wraz z testowymi wywołania
 *** _http://localhost:8080/spring-mvc-01/_
 
 * link:{appdir}/spring-mvc-02[spring-mvc-02] link:{imgdir}/spring-mvc-02.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]]
+** wyświetlenie strony startowej
+*** _http://localhost:8080/spring-mvc-02/_
 ** wyświetlenie listy produktów
 *** _http://localhost:8080/spring-mvc-02/products_
 
 * link:{appdir}/spring-mvc-03[spring-mvc-03] link:{imgdir}/spring-mvc-03.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]] 
+** wyświetlenie strony startowej
+*** _http://localhost:8080/spring-mvc-03/_
+** wyświetlenie listy produktów
+*** _http://localhost:8080/spring-mvc-03/products_
 ** wyświetlenie produktu z wybranej kategorii
 *** _http://localhost:8080/spring-mvc-03/market/products/Laptop_
 ** wyświetlenie produktu o podanym identyfikatorze
@@ -43,6 +49,10 @@ Poniżej znajdują się przyrostowe wersje aplikacji wraz z testowymi wywołania
 *** _http://localhost:8080/spring-mvc-03/market/products/filter/params;brands=Google,Dell;categories=Tablet,Laptop_
 
 * link:{appdir}/spring-mvc-04[spring-mvc-04] link:{imgdir}/spring-mvc-04.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]] 
+** wyświetlenie strony startowej
+*** _http://localhost:8080/spring-mvc-04/_
+** wyświetlenie listy produktów
+*** _http://localhost:8080/spring-mvc-04/products_
 ** dodanie nowego produktu
 *** _http://localhost:8080/spring-mvc-04/market/products/add_
 

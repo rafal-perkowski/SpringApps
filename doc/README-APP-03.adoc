@@ -51,6 +51,9 @@ http://localhost:8080/spring-mvc-03/market/products/filter/params;brands=Google,
 ** wyświetlenie listy produktów (ze zdjęciami) http://localhost:8080/spring-mvc-05/market/products[[_localhost/spring-mvc-05/market/products_]]
 ** dodanie nowego produktu (z plikiem) http://localhost:8080/spring-mvc-05/market/products/add[[_localhost/spring-mvc-05/market/products/add_]]
 ** próba wyświetlenia produktu z błędnym identyfikatorem http://localhost:8080/spring-mvc-05/market/product?id=P0000[[_localhost/spring-mvc-05/market/product{id}_]]
+** wyświetlenie produktu z poprawnym identyfikatorem (HTML) http://localhost:8080/spring-mvc-05/market/product?id=P1234[[_localhost/spring-mvc-05/market/product{id}_]]
+** wyświetlenie produktu z poprawnym identyfikatorem (XML) http://localhost:8080/spring-mvc-05/market/product.xml?id=P1234[[_localhost/spring-mvc-05/market/product.xml{id}_]]
+** wyświetlenie produktu z poprawnym identyfikatorem (JSON) http://localhost:8080/spring-mvc-05/market/product.json?id=P1234[[_localhost/spring-mvc-05/market/product.json{id}_]]
 
 ### Uwaga
 Uruchomienie kodów źródłowych w środowisku STS (Spring Tools Suite) pozwala na bezpośrednie wykorzystanie linków testowych (tj. dla _localhost_).

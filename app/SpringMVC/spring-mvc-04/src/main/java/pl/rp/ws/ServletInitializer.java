@@ -12,7 +12,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 		TestController.traceCounter(TestController.InsertType.IN, "ServletInitializer configure(" + application + ")");
 		setRegisterErrorPageFilter(false);
 		TestController.traceCounter(TestController.InsertType.OUT, "ServletInitializer configure(" + application + ")");
-		return application.sources(SpringMvc03Application.class);
+		return application.sources(SpringMvc04Application.class);
 	}
 
 }

@@ -63,5 +63,11 @@ http://localhost:8080/spring-mvc-03/market/products/filter/params;brands=Google,
 ** podanie błędnego kodu promocyjnego http://localhost:8080/spring-mvc-06/market/products/specialOffer?promo=offer[[_localhost/spring-mvc-06/market/products/offer{error}_]]
 ** podanie prawidłowego kodu promocyjnego http://localhost:8080/spring-mvc-06/market/products/specialOffer?promo=OFF3R[[_localhost/spring-mvc-06/market/products/offer{code}_]]
 
+* link:{appdir}/spring-mvc-07[spring-mvc-07] link:{imgdir}/spring-mvc-07.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]] 
+** wyświetlenie strony startowej http://localhost:8080/spring-mvc-07/[[_localhost/spring-mvc-07_]]
+** wyświetlenie listy produktów (+autentykacja) http://localhost:8080/spring-mvc-07/market/products[[_localhost/spring-mvc-07/market/products=>login_]]
+** dodanie nowego produktu (+autoryzacja) http://localhost:8080/spring-mvc-07/market/products/add[[_localhost/spring-mvc-07/market/products/add=>login_]]
+** wywołanie formularza logowania (bezpośrednio) http://localhost:8080/spring-mvc-07/login[[_localhost/spring-mvc-07/login_]]
+
 ### Uwaga
 Uruchomienie kodów źródłowych w środowisku STS (Spring Tools Suite) pozwala na bezpośrednie wykorzystanie linków testowych (tj. dla _localhost_).

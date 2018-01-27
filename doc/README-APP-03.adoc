@@ -55,5 +55,13 @@ http://localhost:8080/spring-mvc-03/market/products/filter/params;brands=Google,
 ** wyświetlenie produktu z poprawnym identyfikatorem (XML) http://localhost:8080/spring-mvc-05/market/product.xml?id=P1234[[_localhost/spring-mvc-05/market/product.xml{id}_]]
 ** wyświetlenie produktu z poprawnym identyfikatorem (JSON) http://localhost:8080/spring-mvc-05/market/product.json?id=P1234[[_localhost/spring-mvc-05/market/product.json{id}_]]
 
+* link:{appdir}/spring-mvc-06[spring-mvc-06] link:{imgdir}/spring-mvc-06.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]] 
+** wyświetlenie strony startowej http://localhost:8080/spring-mvc-06/[[_localhost/spring-mvc-06_]]
+** wyświetlenie listy produktów (ze zdjęciami) http://localhost:8080/spring-mvc-06/market/products[[_localhost/spring-mvc-06/market/products_]]
+** dodanie nowego produktu (z plikiem) http://localhost:8080/spring-mvc-06/market/products/add[[_localhost/spring-mvc-06/market/products/add_]]
+** dodanie nowego produktu (polska wersja) http://localhost:8080/spring-mvc-06/market/products/add?language=pl[[_localhost/spring-mvc-06/market/products/add{lang=PL}_]]
+** podanie błędnego kodu promocyjnego http://localhost:8080/spring-mvc-06/market/products/specialOffer?promo=offer[[_localhost/spring-mvc-06/market/products/offer{error}_]]
+** podanie prawidłowego kodu promocyjnego http://localhost:8080/spring-mvc-06/market/products/specialOffer?promo=OFF3R[[_localhost/spring-mvc-06/market/products/offer{code}_]]
+
 ### Uwaga
 Uruchomienie kodów źródłowych w środowisku STS (Spring Tools Suite) pozwala na bezpośrednie wykorzystanie linków testowych (tj. dla _localhost_).

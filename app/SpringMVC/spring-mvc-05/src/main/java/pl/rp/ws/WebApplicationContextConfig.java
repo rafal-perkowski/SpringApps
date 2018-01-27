@@ -45,9 +45,10 @@ public class WebApplicationContextConfig extends WebMvcConfigurerAdapter {
     
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-       registry.addResourceHandler("/img/**")
+    	TestController.traceCounter(TestController.InsertType.IN, "WebApplicationContextConfig addResourceHandlers(" + registry + ")");
+    	registry.addResourceHandler("/img/**")
               .addResourceLocations("/resources/images/");
-       TestController.traceCounter(TestController.InsertType.INOUT, "WebApplicationContextConfig addResourceHandlers(" + registry + ")");
+    	TestController.traceCounter(TestController.InsertType.OUT, "WebApplicationContextConfig addResourceHandlers(" + registry + ")");
     }
     
     @Bean

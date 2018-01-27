@@ -35,7 +35,7 @@ Poniżej znajdują się przyrostowe wersje aplikacji wraz z testowymi wywołania
 
 * link:{appdir}/spring-mvc-03[spring-mvc-03] link:{imgdir}/spring-mvc-03.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]]
 ** wyświetlenie strony startowej http://localhost:8080/spring-mvc-03/[[_localhost/spring-mvc-03_]]
-** wyświetlenie listy produktów http://localhost:8080/spring-mvc-03/products[[_localhost/spring-mvc-03/market/products_]]
+** wyświetlenie listy produktów http://localhost:8080/spring-mvc-03/market/products[[_localhost/spring-mvc-03/market/products_]]
 ** wyświetlenie produktu z wybranej kategorii http://localhost:8080/spring-mvc-03/market/products/Laptop[[_localhost/spring-mvc-03/market/products/{category}_]]
 ** wyświetlenie produktu o podanym identyfikatorze http://localhost:8080/spring-mvc-03/market/product?id=P1234[[_localhost/spring-mvc-03/market/product{id}_]]
 ** wyświetlenie produktów przy użyciu parametrów macierzowych

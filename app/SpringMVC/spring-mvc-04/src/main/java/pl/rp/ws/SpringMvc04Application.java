@@ -10,8 +10,8 @@ public class SpringMvc04Application {
 
 	public static void main(String[] args) {
 		
-		TestController.traceCounter(TestController.InsertType.IN, "SpringMvc03Application main(" + args + ")");
+		TestController.traceCounter(TestController.InsertType.IN, "SpringMvc04Application main(" + args + ")");
 		SpringApplication.run(SpringMvc04Application.class, args);
-		TestController.traceCounter(TestController.InsertType.OUT, "SpringMvc03Application main(" + args + ")");
+		TestController.traceCounter(TestController.InsertType.OUT, "SpringMvc04Application main(" + args + ")");
 	}
 }

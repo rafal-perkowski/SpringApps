@@ -19,8 +19,8 @@ public class RootApplicationContextConfig {
 	   
 	   TestController.traceCounter(TestController.InsertType.IN, "RootApplicationContextConfig dataSource()");
 	   
-      EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
-      EmbeddedDatabase db = builder
+	   EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
+	   EmbeddedDatabase db = builder
          //.setType(EmbeddedDatabaseType.HSQL)
          .setType(EmbeddedDatabaseType.H2)
          .addScript("db/sql/create-table.sql")

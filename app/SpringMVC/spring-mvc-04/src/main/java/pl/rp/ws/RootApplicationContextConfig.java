@@ -34,6 +34,7 @@ public class RootApplicationContextConfig {
    public NamedParameterJdbcTemplate getJdbcTemplate() {
 	   
 	   TestController.traceCounter(TestController.InsertType.INOUT, "RootApplicationContextConfig getJdbcTemplate()");
+	   
 	   return new NamedParameterJdbcTemplate(dataSource());
    }
 }

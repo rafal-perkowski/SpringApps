@@ -15,6 +15,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
  
     @Autowired
     public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
+    	
     	TestController.traceCounter(TestController.InsertType.IN, "SecurityConfig configureGlobalSecurity(" + auth + ")");
         auth.inMemoryAuthentication().withUser("john").password("pa55word").roles("USER");
         auth.inMemoryAuthentication().withUser("admin").password("root123").roles("USER","ADMIN");
@@ -23,6 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
+    	
     	TestController.traceCounter(TestController.InsertType.IN, "SecurityConfig configure(" + httpSecurity + ")");
     	httpSecurity.formLogin().loginPage("/login")
     			.usernameParameter("userId")

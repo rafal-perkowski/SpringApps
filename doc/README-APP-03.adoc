@@ -69,5 +69,11 @@ http://localhost:8080/spring-mvc-03/market/products/filter/params;brands=Google,
 ** dodanie nowego produktu (+autoryzacja) http://localhost:8080/spring-mvc-07/market/products/add[[_localhost/spring-mvc-07/market/products/add=>login_]]
 ** wywołanie formularza logowania (bezpośrednio) http://localhost:8080/spring-mvc-07/login[[_localhost/spring-mvc-07/login_]]
 
+* link:{appdir}/spring-mvc-08[spring-mvc-08] link:{imgdir}/spring-mvc-08.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]] 
+** wyświetlenie strony startowej http://localhost:8080/spring-mvc-08/[[_localhost/spring-mvc-08_]]
+** wywołanie formularza logowania (username: admin) http://localhost:8080/spring-mvc-08/login[[_localhost/spring-mvc-08/login{admin}_]]
+** wyświetlenie strony dodawania nowego produktu (po logowaniu), próba dodania pustego formularza powoduje wyświetlenie komunikatów o błędach 
+http://localhost:8080/spring-mvc-08/market/products/add[[_localhost/spring-mvc-08/market/products/add{errors}_]]
+
 ### Uwaga
 Uruchomienie kodów źródłowych w środowisku STS (Spring Tools Suite) pozwala na bezpośrednie wykorzystanie linków testowych (tj. dla _localhost_).

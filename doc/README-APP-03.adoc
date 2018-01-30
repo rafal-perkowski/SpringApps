@@ -75,5 +75,15 @@ http://localhost:8080/spring-mvc-03/market/products/filter/params;brands=Google,
 ** wyświetlenie strony dodawania nowego produktu (po logowaniu), próba dodania pustego formularza powoduje wyświetlenie komunikatów o błędach 
 http://localhost:8080/spring-mvc-08/market/products/add[[_localhost/spring-mvc-08/market/products/add{errors}_]]
 
+* link:{appdir}/spring-mvc-09[spring-mvc-09] link:{imgdir}/spring-mvc-09-cart.png[[_ekran sniffera (cart)_]] link:{imgdir}/spring-mvc-09-rest.png[[_ekran sniffera (rest)_]] link:{capdir}[[_zapis komunikacji (cart i rest)_]] 
+** wyświetlenie strony startowej http://localhost:8080/spring-mvc-09/[[_localhost/spring-mvc-09_]]
+** wyświetlenie strony dodawania nowego produktu (z logowaniem username: john) http://localhost:8080/spring-mvc-09/market/products[[_localhost/spring-mvc-09/market/products=>login{john}_]]
+** wyświetlenie strony wybranego produktu i dodanie do koszyka http://localhost:8080/spring-mvc-09/market/product?id=P1234[[_localhost/spring-mvc-09/market/product{id}_]]
+** wyświetlenie zawartości koszyka http://localhost:8080/spring-mvc-09/cart/[[_localhost/spring-mvc-09/cart/_]]
+
+
+
+
+
 ### Uwaga
 Uruchomienie kodów źródłowych w środowisku STS (Spring Tools Suite) pozwala na bezpośrednie wykorzystanie linków testowych (tj. dla _localhost_).

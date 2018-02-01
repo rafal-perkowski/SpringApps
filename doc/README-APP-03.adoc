@@ -3,6 +3,7 @@
 :appdir: ../app/SpringMVC
 :imgdir: ../img/img-03
 :capdir: ../cap
+:flowviewresolver: https://github.com/spring-projects/spring-webflow/blob/master/spring-webflow/src/main/java/org/springframework/webflow/mvc/builder/FlowResourceFlowViewResolver.java
 
 ## Wstęp
 
@@ -19,7 +20,7 @@ W stosunku do oryginału zastosowano następujące zmiany:
 
 * Szkielety aplikacji powstają przy użyciu kreatora Spring Starter Project.
 * Parametry konfiguracyjne aplikacji zostały przeniesione (tam gdzie jest to możliwe) do pliku _application.properties_.
-* Wykorzystano szablony Thymeleaf w miejsce serwletów JSP.
+* Wykorzystano szablony Thymeleaf w miejsce serwletów JSP (z wyjątkiem Spring Web Flow).
 * Baza HQSL została zamieniona na bazę H2.
 
 ## Etapy
@@ -77,12 +78,17 @@ http://localhost:8080/spring-mvc-08/market/products/add[[_localhost/spring-mvc-0
 
 * link:{appdir}/spring-mvc-09[spring-mvc-09] link:{imgdir}/spring-mvc-09-cart.png[[_ekran sniffera (cart)_]] link:{imgdir}/spring-mvc-09-rest.png[[_ekran sniffera (rest)_]] link:{capdir}[[_zapis komunikacji (cart i rest)_]] 
 ** wyświetlenie strony startowej http://localhost:8080/spring-mvc-09/[[_localhost/spring-mvc-09_]]
-** wyświetlenie strony dodawania nowego produktu (z logowaniem username: john) http://localhost:8080/spring-mvc-09/market/products[[_localhost/spring-mvc-09/market/products=>login{john}_]]
+** wyświetlenie listy produktów (z logowaniem username: john) http://localhost:8080/spring-mvc-09/market/products[[_localhost/spring-mvc-09/market/products=>login{john}_]]
 ** wyświetlenie strony wybranego produktu i dodanie do koszyka http://localhost:8080/spring-mvc-09/market/product?id=P1234[[_localhost/spring-mvc-09/market/product{id}_]]
-** wyświetlenie zawartości koszyka http://localhost:8080/spring-mvc-09/cart/[[_localhost/spring-mvc-09/cart/_]]
+** wyświetlenie zawartości koszyka http://localhost:8080/spring-mvc-09/cart[[_localhost/spring-mvc-09/cart_]]
 
-
-
+* link:{appdir}/spring-mvc-10[spring-mvc-10] link:{imgdir}/spring-mvc-10-confirmed.png[[_checkout confirmed_]] link:{imgdir}/spring-mvc-10-cancelled.png[[_checkout cancelled_]] link:{capdir}[[_zapis komunikacji checkout_]]
+** pliki JSP nie zostały konwertowane na Thymeleaf ponieważ dla innych rozszerzeń niż .jsp i .jspx _FlowViewResolver_ zgłasza wyjątek _IllegalArgumentException_ w funkcji _getViewInternal()_ link:{flowviewresolver}[FlowResourceFlowViewResolver.java]
+** wyświetlenie strony startowej http://localhost:8080/spring-mvc-10/[[_localhost/spring-mvc-10_]]
+** wyświetlenie listy produktów (z logowaniem username: john) http://localhost:8080/spring-mvc-10/market/products[[_localhost/spring-mvc-10/market/products=>login{john}_]]
+** wyświetlenie strony wybranego produktu i dodanie do koszyka http://localhost:8080/spring-mvc-10/market/product?id=P1234[[_localhost/spring-mvc-10/market/product{id}_]]
+** wyświetlenie zawartości koszyka http://localhost:8080/spring-mvc-10/cart[[_localhost/spring-mvc-10/cart_]]
+** wyświetlenie zawartości koszyka http://localhost:8080/spring-mvc-10/checkout?cartId={sessionId}[[_localhost:8080/spring-mvc-10/checkout{cartId=sessionId}_]]
 
 
 ### Uwaga

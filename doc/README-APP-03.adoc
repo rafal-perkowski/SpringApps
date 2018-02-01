@@ -83,13 +83,13 @@ http://localhost:8080/spring-mvc-08/market/products/add[[_localhost/spring-mvc-0
 ** wyświetlenie zawartości koszyka http://localhost:8080/spring-mvc-09/cart[[_localhost/spring-mvc-09/cart_]]
 
 * link:{appdir}/spring-mvc-10[spring-mvc-10] link:{imgdir}/spring-mvc-10-confirmed.png[[_checkout confirmed_]] link:{imgdir}/spring-mvc-10-cancelled.png[[_checkout cancelled_]] link:{capdir}[[_zapis komunikacji checkout_]]
-** pliki JSP nie zostały konwertowane na Thymeleaf ponieważ dla innych rozszerzeń niż .jsp i .jspx _FlowViewResolver_ zgłasza wyjątek _IllegalArgumentException_ w funkcji _getViewInternal()_ link:{flowviewresolver}[FlowResourceFlowViewResolver.java]
+** pliki JSP dla Spring Web Flow (.xml) nie zostały konwertowane na Thymeleaf (.html) ponieważ dla innych rozszerzeń niż (.jsp) i (.jspx) _FlowViewResolver_ zgłasza wyjątek _IllegalArgumentException_ w funkcji _getViewInternal()_ link:{flowviewresolver}[FlowResourceFlowViewResolver.java]
+** graf przepływu dla realizacji transakcji zakupu produktów z koszyka link:{imgdir}/spring-mvc-10-checkout-flow.png[[_Checkout Flow (XML)_]]
 ** wyświetlenie strony startowej http://localhost:8080/spring-mvc-10/[[_localhost/spring-mvc-10_]]
 ** wyświetlenie listy produktów (z logowaniem username: john) http://localhost:8080/spring-mvc-10/market/products[[_localhost/spring-mvc-10/market/products=>login{john}_]]
 ** wyświetlenie strony wybranego produktu i dodanie do koszyka http://localhost:8080/spring-mvc-10/market/product?id=P1234[[_localhost/spring-mvc-10/market/product{id}_]]
 ** wyświetlenie zawartości koszyka http://localhost:8080/spring-mvc-10/cart[[_localhost/spring-mvc-10/cart_]]
 ** wyświetlenie zawartości koszyka http://localhost:8080/spring-mvc-10/checkout?cartId={sessionId}[[_localhost:8080/spring-mvc-10/checkout{cartId=sessionId}_]]
-
 
 ### Uwaga
 Uruchomienie kodów źródłowych w środowisku STS (Spring Tools Suite) pozwala na bezpośrednie wykorzystanie linków testowych (tj. dla _localhost_).

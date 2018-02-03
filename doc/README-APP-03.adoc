@@ -98,5 +98,9 @@ http://localhost:8080/spring-mvc-08/market/products/add[[_localhost/spring-mvc-0
 ** wyświetlenie zawartości koszyka (CART) http://localhost:8080/spring-mvc-11/cart[[_localhost/spring-mvc-11/cart_]]
 ** wyświetlenie strony logowania (LOGOUT) http://localhost:8080/spring-mvc-11/logout[[_localhost/spring-mvc-11/logout_]]
 
+* link:{appdir}/spring-mvc-12[spring-mvc-12] link:{imgdir}/spring-mvc-12.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]]
+** wyświetlenie wyników testów JUnit link:{imgdir}/spring-mvc-12-junit.png[[_ekran sniffera_]]
+** wyświetlenie strony startowej http://localhost:8080/spring-mvc-12/[[_localhost/spring-mvc-12_]]
+
 ### Uwaga
 Uruchomienie kodów źródłowych w środowisku STS (Spring Tools Suite) pozwala na bezpośrednie wykorzystanie linków testowych (tj. dla _localhost_).

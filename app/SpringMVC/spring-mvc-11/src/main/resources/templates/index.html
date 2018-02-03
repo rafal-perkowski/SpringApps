@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>          
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+		<title th:replace="tags :: index-title"></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
+		<script src="/spring-mvc-11/resources/js/controllers.js"></script>
+	</head>
+	<body>
+		<section class="container">
+	      <div class="pull-right" style="padding-right: 50px">
+	         <a href="?language=en">English</a>|<a href="?language=nl">Dutch</a>|<a href="?language=pl">Polish</a>
+	         <a th:href="@{/logout}">Logout</a>
+	      </div>
+	   </section>
+
+	   <div class="container">
+	      <div class="jumbotron">
+	         	<div class="header">
+		            <ul class="nav nav-pills pull-right" th:include="navigation :: navigation"></ul>
+		            <h3 class="text-muted">Web Store</h3>
+		         </div>
+				<!-- <h1 th:text="${greeting}"></h1>
+				<p th:text="${tagline}"></p> -->
+				<h1 th:replace="tags :: index-heading"></h1>
+				<p th:replace="tags :: index-tagline"></p>
+	      </div>
+	      
+		<!-- <div class="row">
+	      </div> -->
+	
+			<div class="footer">
+					<p th:replace="footer :: footer">&copy; 2016 The Static Templates</p>
+			</div>
+	
+	   </div>
+	</body>
+</html>

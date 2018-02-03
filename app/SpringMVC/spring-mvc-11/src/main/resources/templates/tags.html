@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8"/>
+		<!-- <title>Tags</title> -->
+		<title th:fragment="index-title">Welcome</title>
+		<title th:fragment="products-title">Products</title>
+		<title th:fragment="product-title">Product</title>
+		<title th:fragment="addProduct-title">Products</title>
+		<title th:fragment="login-title">Login</title>
+		<title th:fragment="cart-title">Shopping Cart</title>
+	</head>
+  <body>
+    <h1 th:fragment="index-heading">Welcome to Web Store!</h1>
+    <p th:fragment="index-tagline">The one and only amazing web store</p>
+    <h1 th:fragment="products-heading">Products</h1>
+    <p th:fragment="products-tagline">All the available products in our store</p>
+    <h1 th:fragment="product-heading">Product</h1>
+    <p th:fragment="product-tagline">Details</p>
+    <h1 th:fragment="addProduct-heading">Products</h1>
+    <p th:fragment="addProduct-tagline">Add Product</p>
+    <h1 th:fragment="login-heading">Welcome to Web Store!</h1>
+    <p th:fragment="login-tagline">The one and only amazing web store</p>
+    <h1 th:fragment="cart-heading">Cart</h1>
+    <p th:fragment="cart-tagline">All the selected products in your cart</p>
+  </body>
+</html>

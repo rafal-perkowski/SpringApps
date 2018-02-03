@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>          
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+		<title th:replace="tags :: addProduct-title"></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
+		<script src="/spring-mvc-11/resources/js/controllers.js"></script>
+	</head>
+	<body>
+		<section class="container">
+	      <div class="pull-right" style="padding-right: 50px">
+	         <a href="?language=en">English</a>|<a href="?language=nl">Dutch</a>|<a href="?language=pl">Polish</a>
+	         <a th:href="@{/logout}">Logout</a>
+	      </div>
+	   </section>
+	
+		<div class="container">
+	      <div class="jumbotron">
+	         	<div class="header">
+		            <ul class="nav nav-pills pull-right" th:include="navigation :: navigation"></ul>
+		            <h3 class="text-muted">Web Store</h3>
+		         </div>
+				<!-- <h1 th:text="${greeting}"></h1>
+				<p th:text="${tagline}"></p> -->
+				<!-- <h1 th:replace="tags :: addProduct-heading"></h1>
+				<p th:replace="tags :: addProduct-tagline"></p> -->
+				<h1><span th:text="#{addProduct.form.products.label}"></span></h1>
+				<p><span th:text="#{addProduct.form.addProducts.label}"></span></p>
+	      </div>
+	      
+		<div class="row">
+			<section class="container">
+				<form  method="POST" action="#" th:action="@{/market/products/add}" th:object="${newProduct}" class="form-horizontal" enctype="multipart/form-data">
+					<div th:each="err : ${#fields.errors('*')}" th:text="${err}" class="alert alert-danger"></div>
+					<fieldset>
+						<!-- <legend>Add new product</legend> -->
+						<legend><span th:text="#{addProduct.form.addNewProduct.label}"></span></legend>
+						<div class="form-group">
+							<label class="control-label col-lg-2 col-lg-2" for="productId"><span th:text="#{addProduct.form.productId.label}"></span></label>
+							<div class="col-lg-10">
+								<input id="productId" type="text" th:field="*{productId}" class="form:input-large"/>
+								<span th:each="err : ${#fields.errors('productId')}" th:text="${err}" class="text-danger"></span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-lg-2 col-lg-2" for="name"><span th:text="#{addProduct.form.name.label}"></span></label>
+							<div class="col-lg-10">
+								<input id="name" type="text" th:field="*{name}" class="form:input-large"/>
+								<span th:each="err : ${#fields.errors('name')}" th:text="${err}" class="text-danger"></span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-lg-2 col-lg-2" for="unitPrice"><span th:text="#{addProduct.form.unitPrice.label}"></span></label>
+							<div class="col-lg-10">
+								<input id="unitPrice" type="text" th:field="*{unitPrice}" class="form:input-large"/>
+								<span th:each="err : ${#fields.errors('unitPrice')}" th:text="${err}" class="text-danger"></span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-lg-2 col-lg-2" for="manufacturer"><span th:text="#{addProduct.form.manufacturer.label}"></span></label>
+							<div class="col-lg-10">
+								<input id="manufacturer" type="text" th:field="*{manufacturer}" class="form:input-large"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-lg-2 col-lg-2" for="category"><span th:text="#{addProduct.form.category.label}"></span></label>
+							<div class="col-lg-10">
+								<input id="category" type="text" th:field="*{category}" class="form:input-large"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-lg-2 col-lg-2" for="unitsInStock"><span th:text="#{addProduct.form.unitsInStock.label}"></span></label>
+							<div class="col-lg-10">
+								<input id="unitsInStock" type="text" th:field="*{unitsInStock}" class="form:input-large"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-lg-2 col-lg-2" for="unitsInOrder"><span th:text="#{addProduct.form.unitsInOrder.label}"></span></label>
+							<div class="col-lg-10">
+								<input id="unitsInOrder" type="text" th:field="*{unitsInOrder}" class="form:input-large"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-lg-2" for="description"><span th:text="#{addProduct.form.description.label}"></span></label>
+							<div class="col-lg-10">
+								<textarea id="description" th:field="*{description}" rows = "2"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-lg-2" for="discontinued"><span th:text="#{addProduct.form.discontinued.label}"></span></label>
+							<div class="col-lg-10">
+								<input type="checkbox" id="discontinued" name="discontinued" th:field="*{discontinued}" value="Discontinued"/>
+							</div>
+						</div>   
+						<div class="form-group">
+							<label class="control-label col-lg-2" for="condition"><span th:text="#{addProduct.form.condition.label}"></span></label>
+							<div class="col-lg-10">
+								<!-- <input type="radio" id="condition" name="condition" th:field="*{condition}" value="New"/>New
+								<input type="radio" id="condition" name="condition" th:field="*{condition}" value="Old"/>Old
+								<input type="radio" id="condition" name="condition" th:field="*{condition}" value="Refurbished"/>Refurbished -->
+								<input type="radio" id="condition" name="condition" th:field="*{condition}" value="New"/><span th:text="#{addProduct.form.new.label}"></span>
+								<input type="radio" id="condition" name="condition" th:field="*{condition}" value="Old"/><span th:text="#{addProduct.form.old.label}"></span>
+								<input type="radio" id="condition" name="condition" th:field="*{condition}" value="Refurbished"/><span th:text="#{addProduct.form.refurbished.label}"></span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-lg-2" for="productImage"><span th:text="#{addProduct.form.productImage.label}"></span></label>
+							<div class="col-lg-10">
+								<input type="file" id="productImage" name="productImage" th:field="*{productImage}" class="form:input-large"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-offset-2 col-lg-10">
+								<input type="submit" id="btnAdd" class="btn btn-primary" value ="Add"/>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</section>
+	    </div>
+	
+			<div class="footer">
+					<p th:replace="footer :: footer">&copy; 2016 The Static Templates</p>
+			</div>
+	   </div>
+
+	</body>
+</html>

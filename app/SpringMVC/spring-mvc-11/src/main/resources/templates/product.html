@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>          
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+		<title th:replace="tags :: product-title"></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
+		<script src="/spring-mvc-11/resources/js/controllers.js"></script>
+	</head>
+	<body>
+		<section class="container">
+	      <div class="pull-right" style="padding-right: 50px">
+	         <a href="?language=en">English</a>|<a href="?language=nl">Dutch</a>|<a href="?language=pl">Polish</a>
+	         <a th:href="@{/logout}">Logout</a>
+	      </div>
+   		</section>
+   		
+   		<div class="container">
+	      <div class="jumbotron">
+	         	<div class="header">
+		            <ul class="nav nav-pills pull-right" th:include="navigation :: navigation"></ul>
+		            <h3 class="text-muted">Web Store</h3>
+		         </div>
+				<!-- <h1 th:text="${greeting}"></h1>
+				<p th:text="${tagline}"></p> -->
+				<h1 th:replace="tags :: product-heading"></h1>
+				<p th:replace="tags :: product-tagline"></p>
+	      </div>
+	      
+			<div class="row">
+				<section class="container" th:attr="ng-app='cartApp'">
+					<div class="row">
+					<div class="col-md-5">
+						<img th:src="@{'/img/' + ${product.productId} + '.png'}" alt="image" style="width: 100%" />
+						</div>
+						<div class="col-md-5">
+							<h3 th:text="${product.name}"></h3>
+							<p th:text="${product.description}"></p>
+							<p>
+								<strong>Item Code : </strong><span class="label label-warning" th:text="${product.productId}"></span>
+							</p>
+							<p>
+								<strong>manufacturer</strong> : <span th:text="${product.manufacturer}"></span>
+							</p>
+							<p>
+								<strong>category</strong> : <span th:text="${product.category}"></span>
+							</p>
+							<p>
+								<strong>Availble units in stock </strong> : <span th:text="${product.unitsInStock}"></span>
+							</p>
+							<h4><span th:text="${product.unitPrice}"></span>USD</h4>
+							<p th:attr="ng-controller='cartCtrl'">
+								<a th:href="@{/market/products}" class="btn btn-default">
+									<span class="glyphicon-hand-left glyphicon"></span> back
+								</a>
+								<a th:href="@{#}" class="btn btn-warning btn-large" th:attr="ng-click='addToCart(\''+${product.productId}+'\')'">
+									<span class="glyphicon-shopping-cart glyphicon"></span> Order Now
+								</a> 
+								<a th:href="@{/cart}" class="btn btn-default">
+									<span class="glyphicon-hand-right glyphicon"></span> View Cart
+								</a> 
+							</p>
+						</div>
+					</div>
+				</section>
+		    </div>
+	
+			<div class="footer">
+				<p th:replace="footer :: footer">&copy; 2016 The Static Templates</p>
+			</div>
+	   </div>
+
+	</body>
+</html>

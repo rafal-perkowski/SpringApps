@@ -92,14 +92,14 @@ http://localhost:8080/spring-mvc-08/market/products/add[[_localhost/spring-mvc-0
 ** wyświetlenie zawartości koszyka http://localhost:8080/spring-mvc-10/checkout?cartId={sessionId}[[_localhost/spring-mvc-10/checkout{cartId=sessionId}_]]
 
 * link:{appdir}/spring-mvc-11[spring-mvc-11] link:{imgdir}/spring-mvc-11.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]]
-** wyświetlenie strony startowej (HOME) http://localhost:8080/spring-mvc-11/[[_localhost/spring-mvc-11_]]
-** wyświetlenie listy produktów (PRODUCTS) http://localhost:8080/spring-mvc-11/market/products[[_localhost/spring-mvc-11/market/products=>login{john}_]]
-** wyświetlenie strony dodawania produktu (ADD PRODUCT) http://localhost:8080/spring-mvc-11/market/products/add[[_localhost/spring-mvc-11/market/products/add_]]
-** wyświetlenie zawartości koszyka (CART) http://localhost:8080/spring-mvc-11/cart[[_localhost/spring-mvc-11/cart_]]
-** wyświetlenie strony logowania (LOGOUT) http://localhost:8080/spring-mvc-11/logout[[_localhost/spring-mvc-11/logout_]]
+** wyświetlenie strony startowej z menu (HOME) http://localhost:8080/spring-mvc-11/[[_localhost/spring-mvc-11_]]
+** wyświetlenie listy produktów z menu (PRODUCTS) http://localhost:8080/spring-mvc-11/market/products[[_localhost/spring-mvc-11/market/products=>login{john}_]]
+** wyświetlenie strony dodawania produktu z menu (ADD PRODUCT) http://localhost:8080/spring-mvc-11/market/products/add[[_localhost/spring-mvc-11/market/products/add=>login{admin}_]]
+** wyświetlenie zawartości koszyka z menu (CART) http://localhost:8080/spring-mvc-11/cart[[_localhost/spring-mvc-11/cart_]]
+** wyświetlenie strony logowania z menu (LOGOUT) http://localhost:8080/spring-mvc-11/logout[[_localhost/spring-mvc-11/logout_]]
 
 * link:{appdir}/spring-mvc-12[spring-mvc-12] link:{imgdir}/spring-mvc-12.png[[_ekran sniffera_]] link:{capdir}[[_zapis komunikacji_]]
-** wyświetlenie wyników testów JUnit link:{imgdir}/spring-mvc-12-junit.png[[_ekran sniffera_]]
+** wyświetlenie wyników testów JUnit link:{imgdir}/spring-mvc-12-junit.png[[_testy JUnit_]]
 ** wyświetlenie strony startowej http://localhost:8080/spring-mvc-12/[[_localhost/spring-mvc-12_]]
 
 ### Uwaga

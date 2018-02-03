@@ -34,24 +34,6 @@ public class WebFlowConfig extends AbstractFlowConfiguration {
    
    }
    
-//   @Bean public ViewResolver viewResolver() {
-//	   
-//	   TestController.traceCounter(TestController.InsertType.IN, "WebFlowConfig viewResolver()");
-//	   ClassLoaderTemplateResolver templateResolver = new
-//	   ClassLoaderTemplateResolver();
-//	   templateResolver.setTemplateMode("XHTML");
-//	   templateResolver.setPrefix("/");
-//	   templateResolver.setSuffix(".html");
-//	   SpringTemplateEngine engine = new SpringTemplateEngine();
-//	   engine.setTemplateResolver(templateResolver);
-//	   ThymeleafViewResolver thymeleafviewResolver = new
-//	   ThymeleafViewResolver();
-//	   thymeleafviewResolver.setTemplateEngine(engine);
-//	   TestController.traceCounter(TestController.InsertType.OUT, "WebFlowConfig viewResolver()");
-//	   
-//	   return thymeleafviewResolver;
-//   }
-
    @Bean
    public FlowExecutor flowExecutor() {
 	   

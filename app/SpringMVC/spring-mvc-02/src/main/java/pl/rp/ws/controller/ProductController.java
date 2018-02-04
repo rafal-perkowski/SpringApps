@@ -22,14 +22,11 @@ public class ProductController {
 	@RequestMapping("/products")
 	public String list(Model model) {
 		
-		TestController.traceCounter(TestController.InsertType.IN, "ProductController list()");
-		
+		TestController.traceCounter(TestController.InsertType.IN, "ProductController list(" + model+ ")");
 //		List<Product> resultList = productRepository.getAllProducts();
 //		model.addAttribute("products", resultList);
-		
-		model.addAttribute("products", productRepository.getAllProducts());
-		
-		TestController.traceCounter(TestController.InsertType.OUT, "ProductController list()");
+		model.addAttribute("products", productRepository.getAllProducts());	
+		TestController.traceCounter(TestController.InsertType.OUT, "ProductController list(" + model+ ")");
 	   
 	   return "products";
 	}
@@ -37,11 +34,9 @@ public class ProductController {
 	@RequestMapping("/update/stock")
 	public String updateStock(Model model) {
 		
-	   TestController.traceCounter(TestController.InsertType.IN, "ProductController updateStock()");
-		
-	   productService.updateAllStock();
-	   
-	   TestController.traceCounter(TestController.InsertType.OUT, "ProductController updateStock()");
+		TestController.traceCounter(TestController.InsertType.IN, "ProductController updateStock(" + model + ")");
+		productService.updateAllStock();
+		TestController.traceCounter(TestController.InsertType.OUT, "ProductController updateStock(" + model + ")");
 	   
 	   return "redirect:/products";
 	}

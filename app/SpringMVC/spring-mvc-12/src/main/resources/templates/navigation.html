@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Navigation</title>
+	</head>
+  <body>
+  	<ul th:fragment="navigation">
+		<li><a th:href="@{/}">Home</a></li>
+		<li><a th:href="@{/market/products}">Products</a></li>
+		<li><a th:href="@{/market/products/add}">Add Product</a></li>
+		<li><a th:href="@{/cart}">Cart</a></li>
+	</ul>
+  </body>
+</html>

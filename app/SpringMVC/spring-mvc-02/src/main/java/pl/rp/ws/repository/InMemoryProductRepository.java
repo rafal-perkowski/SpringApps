@@ -25,10 +25,8 @@ public class InMemoryProductRepository implements ProductRepository{
    public List<Product> getAllProducts() {
 	   
 	   TestController.traceCounter(TestController.InsertType.IN, "InMemoryProductRepository getAllProducts()");
-	   
 	   Map<String, Object> params = new HashMap<String, Object>();
 	   List<Product> result = jdbcTemplate.query("SELECT * FROM products", params, new ProductMapper());
-	   
 	   TestController.traceCounter(TestController.InsertType.OUT, "InMemoryProductRepository getAllProducts()");
 	   
 	   return result;
@@ -37,8 +35,7 @@ public class InMemoryProductRepository implements ProductRepository{
    private static final class ProductMapper implements RowMapper<Product> {
       public Product mapRow(ResultSet rs, int rowNum) throws SQLException {
     	  
-    	 TestController.traceCounter(TestController.InsertType.IN, "ProductMapper mapRow()");
-         
+    	 TestController.traceCounter(TestController.InsertType.IN, "ProductMapper mapRow(" + rs + ", " + rowNum + ")");
     	 Product product = new Product();
          product.setProductId(rs.getString("ID"));
          product.setName(rs.getString("NAME"));
@@ -50,8 +47,7 @@ public class InMemoryProductRepository implements ProductRepository{
          product.setUnitsInStock(rs.getLong("UNITS_IN_STOCK"));
          product.setUnitsInOrder(rs.getLong("UNITS_IN_ORDER"));
          product.setDiscontinued(rs.getBoolean("DISCONTINUED"));
-         
-         TestController.traceCounter(TestController.InsertType.OUT, "ProductMapper mapRow()");
+         TestController.traceCounter(TestController.InsertType.OUT, "ProductMapper mapRow(" + rs + ", " + rowNum + ")");
          
          return product;
       }
@@ -60,15 +56,13 @@ public class InMemoryProductRepository implements ProductRepository{
    @Override
    public void updateStock(String productId, long noOfUnits) {
 	   
-	   TestController.traceCounter(TestController.InsertType.IN, "ProductMapper updateStock()");
-	   
+	   TestController.traceCounter(TestController.InsertType.IN, "ProductMapper updateStock(" + productId + ", " + noOfUnits + ")");
 	   String SQL = "UPDATE PRODUCTS SET UNITS_IN_STOCK = :unitsInStock WHERE ID = :id"; 
 	   Map<String, Object> params = new HashMap<>();
 	   params.put("unitsInStock", noOfUnits);
 	   params.put("id", productId);
 	   jdbcTemplate.update(SQL, params);
-	   
-	   TestController.traceCounter(TestController.InsertType.OUT, "ProductMapper updateStock()");
+	   TestController.traceCounter(TestController.InsertType.OUT, "ProductMapper updateStock(" + productId + ", " + noOfUnits + ")");
    }
 
 }

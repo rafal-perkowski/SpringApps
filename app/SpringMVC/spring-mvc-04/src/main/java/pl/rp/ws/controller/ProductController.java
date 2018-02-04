@@ -91,6 +91,8 @@ public class ProductController {
 		TestController.traceCounter(TestController.InsertType.IN, "ProductController processAddNewProductForm(" + newProduct + ", " + result + ")");
 		String[] suppressedFields = result.getSuppressedFields();
 		   if (suppressedFields.length > 0) {
+			   TestController.traceCounter(TestController.InsertType.OUT, "ProductController processAddNewProductForm(" + newProduct + ", " + result + ")");
+			   TestController.traceCounter(TestController.InsertType.DEBUG, "ProductController processAddNewProductForm(" + newProduct + ", " + result + ")");
 		      throw new RuntimeException("Attempting to bind disallowed fields: " + StringUtils.arrayToCommaDelimitedString(suppressedFields));
 		   }
 	

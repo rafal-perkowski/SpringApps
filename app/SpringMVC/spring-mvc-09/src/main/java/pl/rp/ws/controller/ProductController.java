@@ -69,6 +69,7 @@ public class ProductController {
 		TestController.traceCounter(TestController.InsertType.IN, "ProductController getProductsByCategory(" + model + ", " + productCategory +")");
 		List<Product> products = productService.getProductsByCategory(productCategory);
 		if (products == null || products.isEmpty()) {
+			TestController.traceCounter(TestController.InsertType.OUT, "ProductController getProductsByCategory(" + model + ", " + productCategory +")");
 			TestController.traceCounter(TestController.InsertType.DEBUG, "ProductController getProductsByCategory(" + model + ", " + productCategory +")");
 			throw new NoProductsFoundUnderCategoryException();
 		}
@@ -120,6 +121,7 @@ public class ProductController {
 		String[] suppressedFields = result.getSuppressedFields();
 		
 		if (suppressedFields.length > 0) {
+			TestController.traceCounter(TestController.InsertType.OUT, "ProductController processAddNewProductForm(" + newProduct + ", " + result + "," + request + ")");
 			TestController.traceCounter(TestController.InsertType.DEBUG, "ProductController processAddNewProductForm(" + newProduct + ", " + result + "," + request + ")");
 			throw new RuntimeException("Attempting to bind disallowed fields: " + StringUtils.arrayToCommaDelimitedString(suppressedFields));
 		}
@@ -131,6 +133,7 @@ public class ProductController {
 			try {
 				productImage.transferTo(new File(rootDirectory+"resources\\images\\"+ newProduct.getProductId() + ".png"));
 			} catch (Exception e) {
+				TestController.traceCounter(TestController.InsertType.OUT, "ProductController processAddNewProductForm(" + newProduct + ", " + result + "," + request + ")");
 				TestController.traceCounter(TestController.InsertType.DEBUG, "ProductController processAddNewProductForm(" + newProduct + ", " + result + "," + request + ")");
 				throw new RuntimeException("Product Image saving failed", e);
 			}
